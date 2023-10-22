@@ -1,5 +1,6 @@
 package com.example.simple_caculator
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun cEAction(view: View) {
+        workingsTV.text = ""
 
     }
     fun cAction(view: View) {
@@ -55,7 +57,10 @@ class MainActivity : AppCompatActivity() {
             workingsTV.append(view.text)
             canAddOperation = false
             canAddDecimal = true
+
+
         }
+
     }
 
     fun equalsAction(view: View) {
